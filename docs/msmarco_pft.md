@@ -5,14 +5,16 @@ This example demonstrates how we can train a Dense Retriever on the MS Marco Pas
 ## Training
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 WANDB_PROJECT=masakhane-miracl WANDB_ENTITY=masakhane-miracl \
-python -m tevatron.driver.train \
+CUDA_VISIBLE_DEVICES=0,1,2,3 WANDB_PROJECT=masakhane-ciral WANDB_ENTITY=masakhane-miracl \
+python -m torch.distributed.launch \
+--nproc_per_node 4 \
+-m tevatron.driver.train \
 --output_dir models/swahili-bert-msmarco/ \
 --model_name_or_path Davlan/bert-base-multilingual-cased-finetuned-swahili \
 --save_steps 20000 \
 --dataset_name Tevatron/msmarco-passage \
 --fp16 \
---per_device_train_batch_size 8 \
+--per_device_train_batch_size 32 \
 --train_n_passages 8 \
 --learning_rate 4e-5 \
 --q_max_len 64 \
