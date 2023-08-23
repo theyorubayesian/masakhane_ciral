@@ -1,0 +1,3 @@
+[submodule "tools/tevatron"]
+	path = tools/tevatron
+	url = https://github.com/theyorubayesian/tevatron.git
