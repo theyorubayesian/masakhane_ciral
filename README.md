@@ -1,7 +1,5 @@
 # masakhane_ciral
 
-# masakhane_miracl
-
 This repository guides our submission to the [Cross-lingual Information Retrieval for African Languages](https://ciralproject.github.io/) track hosted at [Forum for Information Retrieval Evaluation '23](http://fire.irsi.res.in/fire/2023/call_for_tracks)
 
 ## Setup & Installation
