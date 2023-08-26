@@ -14,7 +14,13 @@ conda activate ciral
 * Clone the repo
 
 ```bash
-git clone --recurse-submodules https://github.com/theyorubayesian/masakhane_miracl.git 
+git clone --recurse-submodules https://github.com/theyorubayesian/masakhane_ciral.git 
+```
+
+If you already cloned the repo and failed to pull the submodules, you can update by running
+
+```bash
+git submodule update --init
 ```
 
 * Install `Pytorch>=1.10` suitable for your CUDA version. See [Pytorch](https://pytorch.org/get-started/previous-versions/#v1101)
@@ -25,7 +31,7 @@ git clone --recurse-submodules https://github.com/theyorubayesian/masakhane_mira
 pip install -r requirements.txt
 ```
 
-* Login to [Weights & Biases](https://wandb.ai/masakhane-miracl/masakhane-miracl) where we are logging our experiments.
+* Login to [Weights & Biases](https://wandb.ai/masakhane-miracl/ciral) where we are logging our experiments.
 
 ```bash
 wandb login

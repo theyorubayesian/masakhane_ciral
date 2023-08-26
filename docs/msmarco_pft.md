@@ -5,7 +5,7 @@ This example demonstrates how we can train a Dense Retriever on the MS Marco Pas
 ## Training
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 WANDB_PROJECT=masakhane-ciral WANDB_ENTITY=masakhane-miracl \
+CUDA_VISIBLE_DEVICES=0,1,2,3 WANDB_PROJECT=ciral WANDB_ENTITY=masakhane-miracl \
 python -m torch.distributed.launch \
 --nproc_per_node 4 \
 -m tevatron.driver.train \
@@ -57,15 +57,15 @@ python -m tevatron.driver.encode \
 
 ```bash
 python -m tevatron.faiss_retriever \
-    --query_reps outputs/swahili-bert-msmarco/query_encoding/swahili/query_emb.pkl \
-    --passage_reps outputs/swahili-bert-msmarco/corpus_encoding/swahili/corpus_emb.pkl \
-    --depth 100 \
-    --batch_size -1 \
-    --save_text \
-    --save_ranking_to runs/swahili-bert-msmarco/swahili/mrtydi.test.txt && \
-    python -m tevatron.utils.format.convert_result_to_trec \
-    --input runs/swahili-bert-msmarco/swahili/mrtydi.test.txt \
-    --output runs/swahili-bert-msmarco/swahili/mrtydi.test.trec
+--query_reps outputs/swahili-bert-msmarco/query_encoding/swahili/query_emb.pkl \
+--passage_reps outputs/swahili-bert-msmarco/corpus_encoding/swahili/corpus_emb.pkl \
+--depth 100 \
+--batch_size -1 \
+--save_text \
+--save_ranking_to runs/swahili-bert-msmarco/swahili/mrtydi.test.txt && \
+python -m tevatron.utils.format.convert_result_to_trec \
+--input runs/swahili-bert-msmarco/swahili/mrtydi.test.txt \
+--output runs/swahili-bert-msmarco/swahili/mrtydi.test.trec
 ```
 
 ## Evaluate
