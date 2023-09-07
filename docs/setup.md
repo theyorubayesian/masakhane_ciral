@@ -29,8 +29,8 @@ After downloading the qrel files, please copy them into the relevant language fo
 You also have to download the dev qrels manually. Refer to the relevant links below: 
 
 * [Hausa](https://huggingface.co/datasets/CIRAL/ciral/tree/main/ciral-hausa/qrels)
-- [Somali](https://huggingface.co/datasets/CIRAL/ciral/tree/main/ciral-somali/qrels)
-- [Swahili](https://huggingface.co/datasets/CIRAL/ciral/tree/main/ciral-swahili/qrels)
-- [Yoruba](https://huggingface.co/datasets/CIRAL/ciral/tree/main/ciral-yoruba/qrels)
+* [Somali](https://huggingface.co/datasets/CIRAL/ciral/tree/main/ciral-somali/qrels)
+* [Swahili](https://huggingface.co/datasets/CIRAL/ciral/tree/main/ciral-swahili/qrels)
+* [Yoruba](https://huggingface.co/datasets/CIRAL/ciral/tree/main/ciral-yoruba/qrels)
 
-After downloading the qrel files, please copy them into the relevant language folders for Hausa - [data/qrels/ciral/ciral-hausa], Somali - [data/qrels/ciral/ciral-somali], Swahili - [data/qrels/ciral/ciral-swahili](../data/qrels/miracl/miracl-v1.0-sw) and Yoruba - [data/qrels/ciral/ciral-yoruba](../data/qrels/ciral/ciral-yoruba).
+After downloading the qrel files, please copy them into the relevant language folders for Hausa - [data/qrels/ciral/ciral-hausa](../data/qrels/ciral/ciral-hausa/), Somali - [data/qrels/ciral/ciral-somali](../data/qrels/ciral/ciral-somali/), Swahili - [data/qrels/ciral/ciral-swahili](../data/qrels/ciral/ciral-swahili/) and Yoruba - [data/qrels/ciral/ciral-yoruba](../data/qrels/ciral/ciral-yoruba).
